@@ -1,0 +1,170 @@
+HTMLhtml
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grace world hub | blog</title>
+  <meta name="description" content="articles, inspiration, education and stories from grace world hub.">
+  <style>
+    body { margin: 0; font-family: arial, sans-serif; background: #f7f7f2; color: #23352c; }
+    header { background: #174d37; color: white; padding: 24px 16px; }
+    header h1 { margin: 0 0 8px; }
+    nav a { color: white; margin-right: 14px; }
+    main { max-width: 850px; margin: auto; padding: 20px 16px; }
+    .intro, article, .admin { background: white; padding: 18px; margin: 16px 0; border-radius: 12px; }
+    article { border-left: 4px solid #c49a45; }
+    .category { color: #956d1e; font-weight: bold; }
+    input, textarea, select, button { box-sizing: border-box; width: 100%; padding: 12px; margin: 7px 0; }
+    button { background: #174d37; color: white; border: 0; border-radius: 6px; }
+    footer { text-align: center; padding: 24px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>grace world hub</h1>
+    <p>stories • knowledge • inspiration</p>
+    <nav><a href="#home">home</a><a href="#articles">blog</a><a href="#admin">write</a></nav>
+  </header>
+  <main id="home">
+    <section class="intro">
+      <h2>ideas that inspire. knowledge that empowers.</h2>
+      <p>explore educational articles, personal growth, inspirational stories and useful ideas.</p>
+    </section>
+    <section id="articles">
+      <h2>latest articles</h2>
+      <div id="posts">
+        <article>
+          <p class="category">motivation</p>
+          <h3>welcome to grace world hub</h3>
+          <p>this is the beginning of our journey of learning, inspiration and growth. visit again for new articles and stories.</p>
+        </article>
+      </div>
+    </section>
+    <section id="admin" class="admin">
+      <h2>write an article</h2>
+      <p>this simple starter page is a preview. it does not yet have secure login or permanent publishing.</p>
+      <label>article title</label><input id="title" placeholder="enter article title">
+      <label>category</label>
+      <select id="category">
+        <option>motivation</option><option>education</option>
+        <option>stories</option><option>business</option>
+      </select>
+      <label>article content</label><textarea id="content" rows="5" placeholder="write your article here"></textarea>
+      <button onclick="previewpost()">preview article</button>
+      <p id="notice" role="status"></p>
+    </section>
+  </main>
+  <footer>© grace world hub</footer>
+  <script>
+    function previewpost() {
+      const title = document.getelementbyid('title').value.trim();
+      const content = document.getelementbyid('content').value.trim();
+      const category = document.getelementbyid('category').value;
+      const notice = document.getelementbyid('notice');
+      if (!title || !content) {
+        notice.textcontent = 'please enter a title and article content.';
+        return;
+      }
+      const article = document.createelement('article');
+      const tag = document.createelement('p');
+      tag.classname = 'category';
+      tag.textcontent = category;
+      const heading = document.createelement('h3');
+      heading.textcontent = title;
+      const body = document.createelement('p');
+      body.textcontent = content;
+      article.append(tag, heading, body);
+      document.getelementbyid('posts').prepend(article);
+      notice.textcontent = 'preview added on this page only. it is not permanently published.';
+    }
+  </script>
+</body>
+</html>
+￼enterHTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grace World Hub | Blog</title>
+  <meta name="description" content="Articles, inspiration, education and stories from Grace World Hub.">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f7f7f2; color: #23352c; }
+    header { background: #174d37; color: white; padding: 24px 16px; }
+    header h1 { margin: 0 0 8px; }
+    nav a { color: white; margin-right: 14px; }
+    main { max-width: 850px; margin: auto; padding: 20px 16px; }
+    .intro, article, .admin { background: white; padding: 18px; margin: 16px 0; border-radius: 12px; }
+    article { border-left: 4px solid #c49a45; }
+    .category { color: #956d1e; font-weight: bold; }
+    input, textarea, select, button { box-sizing: border-box; width: 100%; padding: 12px; margin: 7px 0; }
+    button { background: #174d37; color: white; border: 0; border-radius: 6px; }
+    footer { text-align: center; padding: 24px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grace World Hub</h1>
+    <p>Stories • Knowledge • Inspiration</p>
+    <nav><a href="#home">Home</a><a href="#articles">Blog</a><a href="#admin">Write</a></nav>
+  </header>
+  <main id="home">
+    <section class="intro">
+      <h2>Ideas that inspire. Knowledge that empowers.</h2>
+      <p>Explore educational articles, personal growth, inspirational stories and useful ideas.</p>
+    </section>
+    <section id="articles">
+      <h2>Latest articles</h2>
+      <div id="posts">
+        <article>
+          <p class="category">Motivation</p>
+          <h3>Welcome to Grace World Hub</h3>
+          <p>This is the beginning of our journey of learning, inspiration and growth. Visit again for new articles and stories.</p>
+        </article>
+      </div>
+    </section>
+    <section id="admin" class="admin">
+      <h2>Write an article</h2>
+      <p>This simple starter page is a preview. It does not yet have secure login or permanent publishing.</p>
+      <label>Article title</label><input id="title" placeholder="Enter article title">
+      <label>Category</label>
+      <select id="category">
+        <option>Motivation</option><option>Education</option>
+        <option>Stories</option><option>Business</option>
+      </select>
+      <label>Article content</label><textarea id="content" rows="5" placeholder="Write your article here"></textarea>
+      <button onclick="previewPost()">Preview article</button>
+      <p id="notice" role="status"></p>
+    </section>
+  </main>
+  <footer>© Grace World Hub</footer>
+  <script>
+    function previewPost() {
+      const title = document.getElementById('title').value.trim();
+      const content = document.getElementById('content').value.trim();
+      const category = document.getElementById('category').value;
+      const notice = document.getElementById('notice');
+      if (!title || !content) {
+        notice.textContent = 'Please enter a title and article content.';
+        return;
+      }
+      const article = document.createElement('article');
+      const tag = document.createElement('p');
+      tag.className = 'category';
+      tag.textContent = category;
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+      const body = document.createElement('p');
+      body.textContent = content;
+      article.append(tag, heading, body);
+      document.getElementById('posts').prepend(article);
+      notice.textContent = 'Preview added on this page only. It is not permanently published.';
+    }
+  </script>
+</body>
+</html>
